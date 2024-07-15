@@ -8,12 +8,20 @@ body {
 .App {
   text-align: center;
   padding: 20px;
+  background-color:black;
 }
-
+.header
+{
+  color: #007bff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:3rem;
+  
+}
 .dish-item {
   display: inline-block;
   width: 200px;
-  margin: 20px;
+  margin: 10px;
+  margin-top: 5%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -25,12 +33,19 @@ body {
 .dish-item:hover {
   transform: scale(1.05);
 }
-
-.dish-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 8px 0 0;
+.image {
+  width: 200px; 
+  height: 300px; 
+  overflow: hidden; 
 }
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden; 
+   
+}
+
 
 .dish-item h3 {
   font-size: 1.2em;

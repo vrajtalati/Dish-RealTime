@@ -63,6 +63,7 @@ io.on('connection', (socket) => {
 });
 
 // Notify clients on dish changes
+// MongoDB Change Streams 
 Dish.watch().on('change', (change) => {
   if (change.operationType === 'insert' || change.operationType === 'update' || change.operationType === 'delete') {
     io.emit('update-dishes');
